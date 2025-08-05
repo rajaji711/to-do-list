@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>📝 To-Do List</h1>
+    </header>
+
+   <section class="input-section" aria-label="Add new task">
+  <input type="text" id="taskTitle" placeholder="Enter task title..." />
+  <textarea id="taskDetail" placeholder="Enter task description..." rows="1"></textarea>
+
+  <fieldset class="datetime-section">
+    <legend>Completion Date and Time</legend>
+    <input type="date" id="taskDate" />
+    <input type="time" id="taskTime" />
+  </fieldset>
+
+  <button id="addBtn">Add Task</button>
+</section>
+
+
+    <section aria-label="Task list">
+      <ul id="taskList"></ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Raj Gupta</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
